@@ -1,6 +1,6 @@
 # CodeBook
 
-### 1. All measurements (two measurements in a collumn): 
+### 1. All measurements: 
 tBodyAccMeanX tBodyAccMeanY 
 tBodyAccMeanZ tBodyAccStdX 
 tBodyAccStdY tBodyAccStdZ 
