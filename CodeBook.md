@@ -40,10 +40,15 @@ Subject is an ID of a test subject, activity is a type of activity which was per
 
 ### 3. Activity labels:
 WALKING (1) - Test subject was walking during the test
+
 WALKING_UPSTAIRS (2) - Test subject was walking upstairs during the test
+
 WALKING_DOWNSTAIRS (3) - Test subject was walking downstairs during the test
+
 SITTING (4) - Test subject was sitting during the test
+
 STANDING (5): Test subject was standing during the test
+
 LAYING (6) - Test subject was laying down during the test
 
 ### 4. Variables:
