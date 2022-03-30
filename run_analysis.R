@@ -27,12 +27,12 @@ testing <- cbind(subject_test, y_test, x_test)
 training <- cbind(subject_train, y_train, x_train)
 test_and_train <- rbind(testing, training)
 
-colnames(test_and_train) <- c("subject", "activity", ourCollumnsWithName)
+colnames(test_and_train) <- c('subject', 'activity', ourCollumnsWithName)
 
 test_and_train$activity <- factor(test_and_train$activity, levels = activity_labels[,1], labels = activity_labels[,2])
 test_and_train$subject <- as.factor(test_and_train$subject)
 
-test_and_train.melted <- melt(test_and_train, id = c("subject", "activity"))
+test_and_train.melted <- melt(test_and_train, id = c('subject', 'activity'))
 test_and_train.mean <- dcast(test_and_train.melted, subject + activity ~ variable, mean)
 
-write.table(test_and_train.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(test_and_train.mean, 'tidy.txt', row.names = FALSE, quote = FALSE)
