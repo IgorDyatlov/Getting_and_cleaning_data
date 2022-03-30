@@ -23,8 +23,6 @@ subject_train <- read.table('UCI HAR Dataset/train/subject_train.txt')
 x_train <- read.table('UCI HAR Dataset/train/X_train.txt')[ourCollumns]
 y_train <- read.table('UCI HAR Dataset/train/y_train.txt')
 
-#testing <- cbind(subject_test, y_test, x_test)
-#training <- cbind(subject_train, y_train, x_train)
 test_and_train <- rbind(cbind(subject_test, y_test, x_test), cbind(subject_train, y_train, x_train))
 
 colnames(test_and_train) <- c('subject', 'activity', ourCollumnsWithName)
